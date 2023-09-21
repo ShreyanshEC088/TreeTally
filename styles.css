@@ -5,7 +5,6 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
     position: relative;
 }
 .mainicn{
@@ -39,8 +38,8 @@ body{
     left: 41.5rem;
     border-radius: 20px;
     display: flex;
-    flex-direction: row; /* Change to row to align children horizontally */
-    justify-content: center; /* Center children horizontally */
+    flex-direction: row;
+    justify-content: center; 
     align-items: center;
     box-shadow: 5px 5px 10px #abaaaa;
 }
@@ -65,15 +64,15 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center children vertically */
-    justify-content: center; /* Center children horizontally */
+    align-items: center; 
+    justify-content: center; 
 }
 
 .cont1img {
     flex: 0.8;
     display: flex;
-    align-items: center; /* Center children vertically */
-    justify-content: center; /* Center children horizontally */
+    align-items: center; 
+    justify-content: center; 
 }
 
 .cont1img img {
@@ -106,9 +105,8 @@ body{
 
 .f1img {
     flex: 1;
-    height: auto; /* Remove this line */
+    height: auto; 
     width: 100%;
-    /* Keep the rest of the styles for .f1img */
 }
 
 .f1cont {
@@ -168,18 +166,18 @@ input[type="file"] {
     display: none;
 }
 
-/* Custom CSS for label and upload button */
+
 .custom-file-upload {
     background-color: #ffc107!important; 
     color:black!important;
-    color: #fff; /* Text color to ensure readability */
+    color: #fff; 
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .inline-container {
-    display: inline-block; /* Make the container inline */
+    display: inline-block; 
 }
 
 
@@ -294,9 +292,9 @@ button:hover {
     background-color: red;
 }
 
-/* Chatgpt block */
 
-/* Optional CSS styling for the carousel */
+
+
 #quoteCarousel {
     margin-top: 20px;
     background-color: #f5f5f5;
@@ -306,7 +304,7 @@ button:hover {
     margin-bottom:20px
   }
   
-  /* Style the blockquote and footer inside the carousel items */
+
   .carousel-item blockquote {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -331,7 +329,7 @@ button:hover {
     font-style: italic;
   }
   
-  /* Style the carousel control icons */
+  
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     /* background-color: #333; */
@@ -341,13 +339,13 @@ button:hover {
     font-size: 24px;
   }
   
-  /* Adjust the position of the carousel control icons */
+
   .carousel-control-prev, .carousel-control-next {
     top: 50%;
     transform: translateY(-50%);
   }
   
-  /* Add hover effect to the carousel control icons */
+ 
   .carousel-control-prev:hover, .carousel-control-next:hover {
     /* background-color: #555; */
   }
@@ -427,13 +425,12 @@ footer {
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-/* Copyright notice */
 .copyright {
     text-align: center;
     margin-top: 20px;
     font-size: 0.8rem;
 }
-/* Additional CSS to align the input and button horizontally */
+
 .input-container {
     display: flex;
 }
@@ -454,9 +451,9 @@ footer {
     padding: 10px 15px;
 }
 
-/* Rest of the previous CSS for styling the footer */
 
-/* Responsive styles for smaller screens */
+
+
 @media (max-width: 768px) {
     .footer-section {
         margin: 10px 0;
