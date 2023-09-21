@@ -1,0 +1,479 @@
+body{
+    /* overflow: hidden; */
+}
+#sec2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    position: relative;
+}
+.mainicn{
+    height:40px;
+    width:40px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.backimg{
+    height:31.25rem;
+    width:79.75rem;
+}
+.backimg img{
+    height:31.25rem;
+    width:79.75rem;
+}
+.navbar-nav{
+    margin-left:440px;
+}
+.nav-item{
+    margin-left:20px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.treecount {
+    background-color: whitesmoke;
+    height: auto;
+    width: 45%;
+    position: absolute;
+    top: 9.3rem;
+    left: 41.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row; /* Change to row to align children horizontally */
+    justify-content: center; /* Center children horizontally */
+    align-items: center;
+    box-shadow: 5px 5px 10px #abaaaa;
+}
+
+.text {
+    margin-right: 15px;
+    margin-top: 10px;
+    color: rgba(28, 155, 28, 0.84);
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Kalam', cursive; */
+}
+
+.content {
+    padding-left:10px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cont1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children vertically */
+    justify-content: center; /* Center children horizontally */
+}
+
+.cont1img {
+    flex: 0.8;
+    display: flex;
+    align-items: center; /* Center children vertically */
+    justify-content: center; /* Center children horizontally */
+}
+
+.cont1img img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right:0.93rem;
+    transition: transform 0.3s; 
+}
+.cont1img img:hover{
+    margin-right:15rem;
+    transform: scale(2.2);
+}
+.mission{
+    margin-left:40%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.C{
+    font-size: 3.125rem;
+}
+
+.f1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2.5%;
+}
+
+.f1img {
+    flex: 1;
+    height: auto; /* Remove this line */
+    width: 100%;
+    /* Keep the rest of the styles for .f1img */
+}
+
+.f1cont {
+    flex: 1;
+    border-radius: 25px;
+    margin-left: 10px;
+    background-color: rgba(61, 221, 173, 0.336);
+    height: 100%; 
+}
+.f1img .carousel-inner img {
+    width: 100%; 
+    height: 25rem; 
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.f1cont span{
+    padding-left:10px;
+}
+.first{
+    /* margin-top:30px; */
+}
+.second{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.execution{
+    margin-left:30%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Upload Section */
+.upload-container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* opacity:0.7; */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Custom CSS for label and upload button */
+.custom-file-upload {
+    background-color: #ffc107!important; 
+    color:black!important;
+    color: #fff; /* Text color to ensure readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inline-container {
+    display: inline-block; /* Make the container inline */
+}
+
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+.jpg{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.upld{
+    display:flex;
+}
+
+.sample{
+    flex:1;
+    height:auto;
+    width:100%;
+    object-fit: cover;
+    padding:0.625rem;
+}
+.sample img{
+    height:auto;
+    width:100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.sample1{
+    flex:1;
+    height:auto;
+    width:100%;
+    object-fit: cover;
+    padding:0.625rem;
+}
+.sample1 img{
+    height:600px;
+    width:100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.upl{
+    flex:1;
+}
+.upll{
+    position: absolute;
+    top:115rem;
+    left:31.56rem;
+}
+.statement{
+    position: absolute;
+    top:112rem;
+    left:4rem;
+}
+.statement h3 {
+    color:white;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.statement span{
+    position: absolute;
+    top:3rem;
+    left:22rem;
+    color:white;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.canva{
+    margin-left:150px;
+    width:70%;
+    height:500px;
+}
+.execute{
+    margin:40px;
+    font-size: 30px;
+    margin-left:35%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.exe{
+    margin:40px;
+    font-size: 30px;
+    margin-left:45%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sec8{
+    height:500px;
+    width:100%;
+    border:2px solid black;
+    padding:30px;
+    margin:30px;
+    background-color: red;
+}
+
+/* Chatgpt block */
+
+/* Optional CSS styling for the carousel */
+#quoteCarousel {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    background-image: url('images/img-3.jpg');
+    border-radius: 10px;
+    padding: 60px;
+    margin-bottom:20px
+  }
+  
+  /* Style the blockquote and footer inside the carousel items */
+  .carousel-item blockquote {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #ffc107c8;
+    height:250px;
+  }
+  
+  .carousel-item blockquote p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* margin-top: 20px; */
+    padding:30px;
+    color:white;
+  }
+  
+  .carousel-item blockquote footer {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  /* Style the carousel control icons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    /* background-color: #333; */
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+  }
+  
+  /* Adjust the position of the carousel control icons */
+  .carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Add hover effect to the carousel control icons */
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    /* background-color: #555; */
+  }
+
+  /* Footer */
+
+  /* Footer styles */
+footer {
+    background-color: #333;
+    border-radius: 15px;
+    margin:20px;
+    padding:10px;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.preserve{
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-section {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input[type="email"] {
+    margin-top:20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+    width: 30%;
+    /* background-color: #4CAF50; */
+    background-color: #ffc107!important;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #ffc107!important;
+}
+
+.G{
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.GG{
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+/* Copyright notice */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+/* Additional CSS to align the input and button horizontally */
+.input-container {
+    display: flex;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* Rest of the previous CSS for styling the footer */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
