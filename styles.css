@@ -1,17 +1,22 @@
 body{
     /* overflow: hidden; */
 }
-#sec2{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
 .mainicn{
     height:40px;
     width:40px;
     padding-bottom: 5px;
     margin-bottom: 5px;
+}
+.navbar-nav{
+    margin-left:440px;
+}
+
+/* Section2 */
+#sec2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .backimg{
     height:31.25rem;
@@ -20,9 +25,6 @@ body{
 .backimg img{
     height:31.25rem;
     width:79.75rem;
-}
-.navbar-nav{
-    margin-left:440px;
 }
 .nav-item{
     margin-left:20px;
@@ -87,22 +89,29 @@ body{
     margin-right:15rem;
     transform: scale(2.2);
 }
+
+@media screen and (max-width: 768px) {
+    .treecount {
+        top: 6rem;
+        left: 0;
+        right: 0;
+    }
+}
+/* Section 3 and 4*/
 .mission{
     margin-left:40%;
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-.C{
-    font-size: 3.125rem;
-}
-
 .f1 {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 2.5%;
 }
-
+.C{
+    font-size: 3.125rem;
+}
 .f1img {
     flex: 1;
     height: auto; 
@@ -126,21 +135,39 @@ body{
 .f1cont span{
     padding-left:10px;
 }
-.first{
-    /* margin-top:30px; */
-}
+
 .second{
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
 
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .mission {
+        margin-left: 10%; /* Adjust the margin as needed for smaller screens */
+    }
+
+    .f1cont {
+        margin-left: 0;
+        margin-top: 10px; /* Add space between items on smaller screens */
+        border-radius: 15px; /* Reduce border radius for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mission {
+        margin-left: 5%; /* Further adjust the margin for even smaller screens */
+    }
+}
+
+
+/* Section 6 */
 .execution{
     margin-left:30%;
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-
-/* Upload Section */
 .upload-container {
     background-color: #fff;
     max-width: 400px;
@@ -148,7 +175,6 @@ body{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* opacity:0.7; */
 }
 
 h1 {
@@ -166,7 +192,6 @@ input[type="file"] {
     display: none;
 }
 
-
 .custom-file-upload {
     background-color: #ffc107!important; 
     color:black!important;
@@ -179,7 +204,6 @@ input[type="file"] {
 .inline-container {
     display: inline-block; 
 }
-
 
 .custom-file-upload:hover {
     background-color: #0056b3;
@@ -209,7 +233,7 @@ button:hover {
     display:flex;
 }
 
-.sample{
+/* .sample{
     flex:1;
     height:auto;
     width:100%;
@@ -221,7 +245,8 @@ button:hover {
     width:100%;
     object-fit: cover;
     border-radius: 25px;
-}
+} */
+
 .sample1{
     flex:1;
     height:auto;
@@ -263,6 +288,38 @@ button:hover {
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .execution {
+        margin-left: 10%; /* Adjust the margin as needed for smaller screens */
+    }
+
+    .upload-container {
+        max-width: 100%; /* Allow the container to be full width on small screens */
+        margin: 50px auto; /* Adjust the margin for smaller screens */
+    }
+
+    .upld {
+        flex-direction: column; /* Change to column layout for the entire .upld container on small screens */
+    }
+
+    .upll,
+    .statement {
+        position: static; /* Reset the absolute positioning on small screens */
+        margin-top: 0; /* Reset the margin-top on small screens */
+        margin-left: 0; /* Reset the margin-left on small screens */
+    }
+
+    .statement span {
+        position: static; /* Reset the absolute positioning on small screens */
+        top: auto;
+        left: auto;
+    }
+}
+
+
+/* Section 7 */
 .canva{
     margin-left:150px;
     width:70%;
@@ -283,18 +340,25 @@ button:hover {
     font-family: 'Poppins', sans-serif;
 }
 
-#sec8{
-    height:500px;
-    width:100%;
-    border:2px solid black;
-    padding:30px;
-    margin:30px;
-    background-color: red;
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .canva {
+        margin-left: 5%; /* Adjust the margin as needed for smaller screens */
+        width: 90%;
+    }
+
+    .execute,
+    .exe {
+        margin: 10px; /* Further reduce margin for smaller screens */
+        font-size: 20px; /* Further reduce font size for smaller screens */
+        margin-left: auto; /* Center the text horizontally on smaller screens */
+        margin-right: auto;
+    }
 }
 
 
-
-
+/* Section 9 */
 #quoteCarousel {
     margin-top: 20px;
     background-color: #f5f5f5;
@@ -302,10 +366,9 @@ button:hover {
     border-radius: 10px;
     padding: 60px;
     margin-bottom:20px
-  }
+}
   
-
-  .carousel-item blockquote {
+.carousel-item blockquote {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -314,45 +377,59 @@ button:hover {
     text-align: center;
     background-color: #ffc107c8;
     height:250px;
-  }
+}
   
-  .carousel-item blockquote p {
+.carousel-item blockquote p {
     font-size: 20px;
     margin-bottom: 10px;
     /* margin-top: 20px; */
     padding:30px;
     color:white;
-  }
+}
   
-  .carousel-item blockquote footer {
+.carousel-item blockquote footer {
     font-size: 16px;
     font-style: italic;
-  }
+}
   
   
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     /* background-color: #333; */
     color: #fff;
     border-radius: 50%;
     padding: 10px;
     font-size: 24px;
-  }
+}
   
-
-  .carousel-control-prev, .carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
     top: 50%;
     transform: translateY(-50%);
-  }
+}
   
- 
-  .carousel-control-prev:hover, .carousel-control-next:hover {
+.carousel-control-prev:hover, .carousel-control-next:hover {
     /* background-color: #555; */
-  }
+}
 
-  /* Footer */
+/* Media Queries for Responsiveness */
 
-  /* Footer styles */
+@media screen and (max-width: 768px) {
+    #quoteCarousel {
+        padding: 20px; /* Further adjust padding for smaller screens */
+    }
+
+    .carousel-item blockquote p {
+        font-size: 16px; /* Reduce font size for smaller screens */
+        padding: 10px 20px; /* Further adjust padding for smaller screens */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+}
+
+/* Footer */
 footer {
     background-color: #333;
     border-radius: 15px;
@@ -450,27 +527,35 @@ footer {
     cursor: pointer;
     padding: 10px 15px;
 }
+/* Media Queries for Responsiveness */
 
-
-
-
-@media (max-width: 768px) {
-    .footer-section {
-        margin: 10px 0;
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center content horizontally on smaller screens */
     }
 
-    .newsletter-form {
-        flex-direction: column;
+    .preserve {
+        font-size: 20px; /* Further reduce font size for smaller screens */
+    }
+
+    .footer-section {
+        max-width: 90%; /* Reduce max-width for smaller screens */
     }
 
     .newsletter-form input[type="email"] {
-        width: 100%;
-        margin-bottom: 10px;
-        border-radius: 5px;
+        margin-top: 5px; /* Further reduce top margin for smaller screens */
     }
 
     .newsletter-form button {
-        width: 100%;
-        border-radius: 5px;
+        margin-top: 5px; /* Further reduce top margin for spacing on smaller screens */
+    }
+
+    .G {
+        font-size: 24px; /* Further reduce font size for smaller screens */
+    }
+
+    .GG {
+        font-size: 18px; /* Further reduce font size for smaller screens */
     }
 }
