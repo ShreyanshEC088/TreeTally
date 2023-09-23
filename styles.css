@@ -150,6 +150,13 @@ body{
     background-color: rgba(61, 221, 173, 0.336);
     height: 100%; 
 }
+.f2cont {
+    flex: 1;
+    margin-right:10px;
+    border-radius: 25px;
+    background-color: rgba(61, 221, 173, 0.336);
+    height: 100%; 
+}
 .f1img .carousel-inner img {
     width: 100%; 
     height: 25rem; 
@@ -180,7 +187,7 @@ body{
     }
 
     .f1img,
-    .f1cont {
+    .f1cont ,.f2cont{
         flex: initial;
         width: 100%; 
         margin-left: 0; 
@@ -255,50 +262,55 @@ button:hover {
     background-color: #0056b3;
 }
 
-.upld{
-    display:flex;
-}
-.sample1{
-    flex:1;
-    height:auto;
-    width:100%;
+.upld {
+    display: flex;
+    position: relative; /* Add this to create a positioning context */
+  }
+  
+  .sample1 {
+    flex: 1;
+    height: auto;
+    width: 100%;
     object-fit: cover;
-    padding:0.625rem;
-}
-.sample1 img{
-    height:600px;
-    width:100%;
+    padding: 0.625rem;
+    position: relative; 
+  }
+  
+  .sample1 img {
+    height: 600px;
+    width: 100%;
     object-fit: cover;
     border-radius: 25px;
-}
-.upl{
-    flex:1;
-}
-.upll{
+  }
+  
+  .upll,
+  .statement {
     position: absolute;
-    top:130rem;
-    left:38%;
-}
-.statement{
-    position: absolute;
-    top:127rem;
-    left:2rem;
-}
-.statement h3 {
-    color:white;
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  .upll {
+    left: 38%;
+  }
+  
+  .statement {
+    left: 2rem;
+    top:8rem;
+  }
+  
+  .statement h3 {
+    color: white;
     font-size: 30px;
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
-}
-.statement span{
-    position: absolute;
-    top:3rem;
-    left:22rem;
-    color:white;
-    font-size: 40px;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Poppins', sans-serif;
-}
+  }
+  
+  .upload-container {
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+  }
 
 @media screen and (max-width: 768px) {
     .execution {
@@ -345,7 +357,7 @@ button:hover {
 
 /* Section 7 */
 .canva{
-    margin-left:150px;
+    margin-left:9.375rem;
     width:70%;
     height:500px;
 }
@@ -353,13 +365,6 @@ button:hover {
     margin:40px;
     font-size: 30px;
     margin-left:35%;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Poppins', sans-serif;
-}
-.exe{
-    margin:40px;
-    font-size: 30px;
-    margin-left:45%;
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
@@ -371,8 +376,9 @@ button:hover {
         margin-bottom:2rem;
     }
     .canva {
-        margin-left: auto; 
-        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         height:auto;
     }
     .execute,
@@ -384,8 +390,14 @@ button:hover {
     }
 }
 
-
 /* Section 9 */
+.exe{
+    margin:40px;
+    font-size: 30px;
+    margin-left:45%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
 #quoteCarousel {
     margin-top: 20px;
     background-color: #f5f5f5;
