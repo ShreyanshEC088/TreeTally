@@ -313,6 +313,10 @@ button:hover {
   }
 
 @media screen and (max-width: 768px) {
+    #sec6{
+        margin-top:4rem;
+        margin-bottom:4rem;
+    }
     .execution {
         margin-left: auto; 
     }
@@ -452,6 +456,9 @@ button:hover {
 
 
 @media screen and (max-width: 768px) {
+    .exe{
+        margin:auto;
+    }
     #quoteCarousel {
         padding: 20px; 
     }
