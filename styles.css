@@ -277,16 +277,16 @@ button:hover {
 .upll{
     position: absolute;
     top:135rem;
-    left:36rem;
+    left:34rem;
 }
 .statement{
     position: absolute;
     top:132rem;
-    left:10rem;
+    left:2rem;
 }
 .statement h3 {
     color:white;
-    font-size: 40px;
+    font-size: 33px;
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
