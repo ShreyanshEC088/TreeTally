@@ -276,17 +276,17 @@ button:hover {
 }
 .upll{
     position: absolute;
-    top:135rem;
-    left:34rem;
+    top:130rem;
+    left:38%;
 }
 .statement{
     position: absolute;
-    top:132rem;
+    top:127rem;
     left:2rem;
 }
 .statement h3 {
     color:white;
-    font-size: 33px;
+    font-size: 30px;
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
