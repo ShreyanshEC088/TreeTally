@@ -10,21 +10,30 @@ body{
 .navbar-nav{
     margin-left:440px;
 }
+@media (max-width: 768px) {
+    .mainicn {
+        height: 30px; 
+        width: 30px; 
+        padding-bottom: 3px; 
+        margin-bottom: 3px; 
+    }
+
+    .navbar-nav {
+        margin-left: 0px; 
+    }
+}
 
 /* Section2 */
 #sec2{
-    display:flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 .backimg{
-    height:31.25rem;
-    width:79.75rem;
+    height:auto;
+    max-width:100%;
 }
 .backimg img{
-    height:31.25rem;
-    width:79.75rem;
+    height:auto;
+    max-width:100%;
 }
 .nav-item{
     margin-left:20px;
@@ -86,17 +95,33 @@ body{
     transition: transform 0.3s; 
 }
 .cont1img img:hover{
-    margin-right:15rem;
-    transform: scale(2.2);
+    margin-right:auto;
+    transform: scale(1.5);
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    .backimg{
+        height:auto;
+        width:100%;
+    }
+    .backimg img{
+        height:auto;
+        width:100%;
+    }
     .treecount {
-        top: 6rem;
-        left: 0;
-        right: 0;
+        background-color: whitesmoke;
+        height: auto;
+        width: 100%;
+        position: absolute; 
+        top:auto;
+        left: 0rem;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #abaaaa;
+        /* z-index: 99; */
+        margin-top:10px;
     }
 }
+
 /* Section 3 and 4*/
 .mission{
     margin-left:40%;
@@ -141,26 +166,27 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* Media Queries for Responsiveness */
 
-@media screen and (max-width: 768px) {
-    .mission {
-        margin-left: 10%; /* Adjust the margin as needed for smaller screens */
+@media only screen and (max-width: 768px) {
+    #sec3{
+        margin-top:28rem;
+        margin-bottom:auto;
+    }
+    .mission{
+        margin-left:auto;
+    }
+    .f1 {
+        flex-direction: column; 
     }
 
+    .f1img,
     .f1cont {
-        margin-left: 0;
-        margin-top: 10px; /* Add space between items on smaller screens */
-        border-radius: 15px; /* Reduce border radius for smaller screens */
+        flex: initial;
+        width: 100%; 
+        margin-left: 0; 
+        margin-top:4%;
     }
 }
-
-@media screen and (max-width: 576px) {
-    .mission {
-        margin-left: 5%; /* Further adjust the margin for even smaller screens */
-    }
-}
-
 
 /* Section 6 */
 .execution{
@@ -232,21 +258,6 @@ button:hover {
 .upld{
     display:flex;
 }
-
-/* .sample{
-    flex:1;
-    height:auto;
-    width:100%;
-    object-fit: cover;
-    padding:0.625rem;
-}
-.sample img{
-    height:auto;
-    width:100%;
-    object-fit: cover;
-    border-radius: 25px;
-} */
-
 .sample1{
     flex:1;
     height:auto;
@@ -265,13 +276,13 @@ button:hover {
 }
 .upll{
     position: absolute;
-    top:115rem;
+    top:138rem;
     left:31.56rem;
 }
 .statement{
     position: absolute;
-    top:112rem;
-    left:4rem;
+    top:132rem;
+    left:5rem;
 }
 .statement h3 {
     color:white;
@@ -288,33 +299,46 @@ button:hover {
     font-family: 'Anton', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-/* Media Queries for Responsiveness */
 
 @media screen and (max-width: 768px) {
     .execution {
-        margin-left: 10%; /* Adjust the margin as needed for smaller screens */
+        margin-left: auto; 
     }
-
     .upload-container {
-        max-width: 100%; /* Allow the container to be full width on small screens */
-        margin: 50px auto; /* Adjust the margin for smaller screens */
+        max-width: 100%;
+        margin: 50px auto; 
     }
-
-    .upld {
-        flex-direction: column; /* Change to column layout for the entire .upld container on small screens */
+    .upld{
+        position: relative;
+        width: 100%;
     }
-
-    .upll,
-    .statement {
-        position: static; /* Reset the absolute positioning on small screens */
-        margin-top: 0; /* Reset the margin-top on small screens */
-        margin-left: 0; /* Reset the margin-left on small screens */
+    .sample1{
+        width: 100%;
+        height: auto;
     }
-
-    .statement span {
-        position: static; /* Reset the absolute positioning on small screens */
-        top: auto;
-        left: auto;
+    .spample1 img{
+        width: 100%;
+        height: auto;
+    }
+    .statement{
+        position: absolute;
+        font-size: 2px!important;
+        top: 24%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        white-space: normal; 
+        text-align: center; 
+        width: 80%;
+    }
+    .upll{
+        position: absolute;
+        top: 70%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    .inline-container{
+        padding-left:20px;
+        padding-right:20px;
     }
 }
 
@@ -340,19 +364,22 @@ button:hover {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Media Queries for Responsiveness */
 
 @media screen and (max-width: 768px) {
-    .canva {
-        margin-left: 5%; /* Adjust the margin as needed for smaller screens */
-        width: 90%;
+    #sec7{
+        margin-top:2rem;
+        margin-bottom:2rem;
     }
-
+    .canva {
+        margin-left: auto; 
+        width: 90%;
+        height:auto;
+    }
     .execute,
     .exe {
-        margin: 10px; /* Further reduce margin for smaller screens */
-        font-size: 20px; /* Further reduce font size for smaller screens */
-        margin-left: auto; /* Center the text horizontally on smaller screens */
+        margin: 10px; 
+        font-size: 20px; 
+        margin-left: auto;
         margin-right: auto;
     }
 }
@@ -411,21 +438,20 @@ button:hover {
     /* background-color: #555; */
 }
 
-/* Media Queries for Responsiveness */
 
 @media screen and (max-width: 768px) {
     #quoteCarousel {
-        padding: 20px; /* Further adjust padding for smaller screens */
+        padding: 20px; 
     }
 
     .carousel-item blockquote p {
-        font-size: 16px; /* Reduce font size for smaller screens */
-        padding: 10px 20px; /* Further adjust padding for smaller screens */
+        font-size: 16px; 
+        padding: 10px 20px; 
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        font-size: 20px; /* Reduce font size for smaller screens */
+        font-size: 20px; 
     }
 }
 
@@ -527,35 +553,34 @@ footer {
     cursor: pointer;
     padding: 10px 15px;
 }
-/* Media Queries for Responsiveness */
 
 @media screen and (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* Stack sections vertically on smaller screens */
-        align-items: center; /* Center content horizontally on smaller screens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .preserve {
-        font-size: 20px; /* Further reduce font size for smaller screens */
+        font-size: 20px; 
     }
 
     .footer-section {
-        max-width: 90%; /* Reduce max-width for smaller screens */
+        max-width: 90%; 
     }
 
     .newsletter-form input[type="email"] {
-        margin-top: 5px; /* Further reduce top margin for smaller screens */
+        margin-top: 5px; 
     }
 
     .newsletter-form button {
-        margin-top: 5px; /* Further reduce top margin for spacing on smaller screens */
+        margin-top: 5px; 
     }
 
     .G {
-        font-size: 24px; /* Further reduce font size for smaller screens */
+        font-size: 24px; 
     }
 
     .GG {
-        font-size: 18px; /* Further reduce font size for smaller screens */
+        font-size: 18px; 
     }
 }
